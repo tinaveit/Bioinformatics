@@ -1,0 +1,35 @@
+# Name: Martina Veit Acosta
+
+# 1.) Using sed, write a command that removes all lines containing the word "zoo" (upper and lowercase) and prints the output to a new file called panda_zoos.txt. --check lower case
+sed '/[Zz][Oo][Oo]/d' /home/martina/Desktop/pandas >> /home/martina/Desktop/panda_zoos.txt
+
+# 2.) Using awk, linux, and grep, write a command that sorts pandas by sex and prints their name in column 1, age in column 2, and sex in column 3 in a new file called sorted_pandas.txt.
+awk '{print $1, $4, $2}' /home/martina/Desktop/pandas | sort -k 3 >> /home/martina/Desktop/sorted_pandas.txt
+
+# or without using sort
+
+awk '{print $1, $4, $2}' /home/martina/Desktop/pandas | grep ' male$' >> /home/martina/Desktop/sorted_pandas.txt; awk '{print $1, $4, $2}' /home/martina/Desktop/pandas | grep ' female$' >> /home/martina/Desktop/sorted_pandas.txt
+
+# 3.) Using grep and linux commands, print an alphabetically sorted list of zoo/reserve names to a new file called panda_zoos_A2Z.txt.
+cut -f 5 /home/martina/Desktop/pandas| grep -oE '\b[[:alnum:]_]+\b' | sort -u > /home/martina/Desktop/panda_zoos_A2Z.txt
+
+# 4.) Using sed, write a command that replaces all instances of "male" with "M" and "female" with "F" and prints the results to a new file called panda_m_f.txt. 
+cp /home/martina/Desktop/pandas /home/martina/Desktop/panda_m_f.txt; sed -i 's/female/F/g' /home/martina/Desktop/panda_m_f.txt ; sed -i 's/male/M/g' /home/martina/Desktop/panda_m_f.txt
+
+# 5.) Using grep, write a command that counts how many female pandas were born in October (no need to print to new file).
+grep "female" /home/martina/Desktop/pandas | grep -c "October"
+
+# 6.) Using grep, print the pandas.txt file (to a new file called panda_names.txt) with line numbers appended as prefixes (e.g. "1 Name....." on the first line).
+grep -n "" /home/martina/Desktop/pandas > /home/martina/Desktop/panda_names.txt
+
+# 7.) Using sed, write a command that prints lines 1, 6, and 17 to a new file called lines_1_6_17.txt.
+sed -n -e '1p;6p;17p' /home/martina/Desktop/pandas > /home/martina/Desktop/lines_1_6_17.txt
+
+# 8.) Using grep, print lines to a new file that contain the letter "x" (capital or lowercases) and print this to a new file called x_lines.txt.
+grep -i 'x' /home/martina/Desktop/pandas > /home/martina/Desktop/x_lines.txt
+
+# 9.) Using awk and linux commands, find the location of pandas with unique locations where no other pandas are currently kept, and print these to a new file called unique_places.txt.
+awk '{print $5}' /home/martina/Desktop/pandas | sort | uniq -c | grep -w '1' | awk '{print $2}' > /home/martina/Desktop/unique_places.txt
+
+# 10.) Using awk and linux commands, sort panda ages from youngest to oldest and print to a new file, only the pandas age 10 and younger with their names in column 1 and ages in column 2.  Name the file young_pandas.txt.
+awk '$4 <= 10 {print $1, $4}' /home/martina/Desktop/pandas | sort -k2,2n > /home/martina/Desktop/young_pandas.txt

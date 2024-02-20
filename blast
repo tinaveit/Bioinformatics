@@ -1,0 +1,60 @@
+# Assignment 4 (All files on Elearning)
+# Martina Veit Acosta
+
+# Note: I was already "cd" into my correct folder, so I didn't put the whole path in the commands. 
+
+
+1.) Write a command that makes a blast database for the mystery_transcripts.fasta.
+
+makeblastdb -in mystery_transcripts.fasta -dbtype nucl -out mystery_transcripts_database
+
+2.) Write a command that makes a blast database for the mystery_proteins.fasta.
+
+makeblastdb -in mystery_proteins.fasta -dbtype prot -out mystery_proteins_database
+
+3.) Write a command that searches the mystery nucleotide query against the mystery transcripts fasta and: 
+a.) keeps sequences with an e-value of 1e-3 or less, 
+b.) keeps up to 5 hits, and 
+c.) outputs the file to tabular format with comment lines.
+
+blastn -db mystery_transcripts_database -query mystery_nucleotide_query.fasta -evalue 1e-3 -num_alignments 5 -outfmt 7 -out search_results.txt
+
+4.) What is/are the most similar hit(s) from the above search (based on sequence identity)?
+mystery_nucleotide_query	T010027234997	91.965	1481	115	4	1	1479	197	1675	0.0	2073
+mystery_nucleotide_query	T010003453160	91.351	1480	126	2	1	1479	193	1671	0.0	2023
+mystery_nucleotide_query	T010027234995	91.351	1480	126	2	1	1479	193	1671	0.0	2023
+
+5.) Using awk and/or grep, write a command that prints the sequence names with an identity over 90% from the above search to a new file called most_similar.txt.
+awk '$3 > 90' search_results.txt > most_similar.txt
+
+
+6.) Write a command that searches the mystery protein query against the mystery protein fasta
+and: 
+a.) keeps sequences with an e-value of 1e-5 or less, 
+b.) keeps up to 15 hits, and 
+c.) outputs the file to a tabular format with comment lines.
+
+blastp -db mystery_protein_database -query mystery_protein_query.fasta -evalue 1e-5 -num_alignments 15 -outfmt 7 -out search_protein_results.txt
+
+7.) What is/are the best hit(s) from the above search (based on e-value)?
+
+They were all significant, but the 4 first ones may be more relevant.(evalue == 0)
+
+mystery_protein_query	P010027090796	87.805	492	60	0	1	492	1	492	0.0	914
+mystery_protein_query	P010027090798	87.398	492	62	0	1	492	1	492	0.0	912
+mystery_protein_query	P010027073865	84.756	492	75	0	1	492	1	492	0.0	899
+mystery_protein_query	P010027077695	84.553	492	76	0	1	492	1	492	0.0	897
+mystery_protein_query	P010027071558	77.876	113	25	0	307	419	103	215	2.87e-60	198
+mystery_protein_query	P010027071553	77.876	113	25	0	307	419	103	215	2.87e-60	198
+
+
+8.) What is the species of the mystery_transcripts.fasta file?
+Coffea arabica
+
+9.) What is the species of the mystery query?
+Coffea eugenioides
+
+10.) What is the gene of the mystery query?
+LOC113749382 catalase [ Coffea eugenioides ]
+Gene ID: 113749382, updated on 9-Nov-2023
+

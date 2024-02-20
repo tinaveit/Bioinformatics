@@ -1,5 +1,7 @@
 # Name: Martina Veit Acosta
 
+#!/bin/bash
+
 # Displaying message in the screen
 echo "This script can count the number of sequences in a fasta file."
 

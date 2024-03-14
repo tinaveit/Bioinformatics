@@ -1,0 +1,37 @@
+# Name: Martina Veit Acosta
+
+3. Using CIPRES what would the command line text of the above commands be if we were to run this in a terminal?  
+# to submit a job in cipres 
+$ curl -u martinaveit:my_password \
+    -H cipres-appkey:$KEY \
+    -H cipres-eu:martinaveit \
+    -H cipres-eu-email:martina.veitacosta@wmich.edu \
+    -H cipres-eu-country:US \
+    $URL/job/phylobank.martina\
+    -F tool=MUSCLE \
+    -F input.infile_=@./bats_ace2.fasta \
+
+# to get the tree
+
+$ curl -u martinaveit:my_password \
+    -H cipres-appkey:$KEY \
+    -H cipres-eu:martinaveit \
+    -H cipres-eu-email:martina.veitacosta@wmich.edu \
+    -H cipres-eu-country:US \
+    $URL/job/phylobank.martina \
+    -F tool=RAxML-HPC2 \
+    -F input.infile_=@/path/to/bats_ace2_aligned.fasta \
+    -F datatype=dna \
+    -F runtime_="2" \
+    -F choose_bootstrap_=fast
+
+
+4. Sequences from which species is/are most closely related to that of the "Flying Fox"?  
+Synconycteris australis ace2
+Rousettus leschenaultii ace2
+Epomophorus wahlbergi ace2
+Cynopterus sphinx ace2
+Dobsonia viridis ace2
+
+5. Why might such a phylogeny be useful in light of current events?
+Phylogenetic trees help us understand the evolutionary relationships between species, including potential hosts and vectors for diseases. Phylogenetic trees are also helpful in our efforts to understand and apply conservation of species, and several species of flying foxes are listed on the IUCN Red List with varying conservation statuses, including endangered, vulnerable, and least concern. So this information might be helpful.

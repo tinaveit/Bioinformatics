@@ -9,7 +9,7 @@ $ curl -u martinaveit:my_password \
     -H cipres-eu-country:US \
     $URL/job/phylobank.martina\
     -F tool=MUSCLE \
-    -F input.infile_=@./bats_ace2.fasta \
+    -F input.infile_=@/home/martina/Desktop/bioinformatics/bats_ace2.fasta \
 
 # to get the tree
 $ curl -u martinaveit:my_password \
@@ -19,7 +19,7 @@ $ curl -u martinaveit:my_password \
     -H cipres-eu-country:US \
     $URL/job/phylobank.martina \
     -F tool=RAxML-HPC2 \
-    -F input.infile_=@/path/to/bats_ace2_aligned.fasta \
+    -F input.infile_=@/home/martina/Desktop/bioinformatics/bats_ace2_aligned.fasta \
     -F datatype=dna \
     -F runtime_="2" \
     -F choose_bootstrap_=fast

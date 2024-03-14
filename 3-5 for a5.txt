@@ -12,7 +12,6 @@ $ curl -u martinaveit:my_password \
     -F input.infile_=@./bats_ace2.fasta \
 
 # to get the tree
-
 $ curl -u martinaveit:my_password \
     -H cipres-appkey:$KEY \
     -H cipres-eu:martinaveit \

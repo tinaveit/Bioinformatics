@@ -11,12 +11,12 @@ cipresrun \
 
 # to get the tree
 cipresrun \ 
--t RAxML-HPC2_TGB \ 
--p vparam.datatype_=dna  \ 
--p vparam.runtime_ =2 \  
--i /home/martina/Desktop/bioinformatics/bats_ace2_aligned.fasta \ 
--y cipres_appinfo.yml \
--o output.contree=/home/martina/Desktop/bioinformatics/tree.dnd
+    -t RAxML-HPC2_TGB \ 
+    -p vparam.datatype_=dna  \ 
+    -p vparam.runtime_ =2 \  
+    -i /home/martina/Desktop/bioinformatics/bats_ace2_aligned.fasta \ 
+    -y cipres_appinfo.yml \
+    -o output.contree=/home/martina/Desktop/bioinformatics/tree.dnd
 
 4. Sequences from which species is/are most closely related to that of the "Flying Fox"?  
 Synconycteris australis ace2

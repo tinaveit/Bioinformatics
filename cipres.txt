@@ -1,29 +1,22 @@
 # Name: Martina Veit Acosta
 
 3. Using CIPRES what would the command line text of the above commands be if we were to run this in a terminal?  
+
 # to submit a job in cipres 
-$ curl -u martinaveit:my_password \
-    -H cipres-appkey:$KEY \
-    -H cipres-eu:martinaveit \
-    -H cipres-eu-email:martina.veitacosta@wmich.edu \
-    -H cipres-eu-country:US \
-    $URL/job/phylobank.martina\
-    -F tool=MUSCLE \
-    -F input.infile_=@/home/martina/Desktop/bioinformatics/bats_ace2.fasta \
+cipresrun \
+    -t MUSCLE \   
+    -i /home/martina/Desktop/bioinformatics/bats_ace2.fasta \
+    -y cipres_appinfo.yml \
+    -o output.muscle=/home/martina/Desktop/bioinformatics/outfile.fasta \
 
 # to get the tree
-$ curl -u martinaveit:my_password \
-    -H cipres-appkey:$KEY \
-    -H cipres-eu:martinaveit \
-    -H cipres-eu-email:martina.veitacosta@wmich.edu \
-    -H cipres-eu-country:US \
-    $URL/job/phylobank.martina \
-    -F tool=RAxML-HPC2 \
-    -F input.infile_=@/home/martina/Desktop/bioinformatics/bats_ace2_aligned.fasta \
-    -F datatype=dna \
-    -F runtime_="2" \
-    -F choose_bootstrap_=fast
-
+cipresrun \ 
+-t RAxML-HPC2_TGB \ 
+-p vparam.datatype_=dna  \ 
+-p vparam.runtime_ =2 \  
+-i /home/martina/Desktop/bioinformatics/bats_ace2_aligned.fasta \ 
+-y cipres_appinfo.yml \
+-o output.contree=/home/martina/Desktop/bioinformatics/tree.dnd
 
 4. Sequences from which species is/are most closely related to that of the "Flying Fox"?  
 Synconycteris australis ace2

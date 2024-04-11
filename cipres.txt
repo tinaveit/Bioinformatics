@@ -1,22 +1,7 @@
 # Name: Martina Veit Acosta
 
 3. Using CIPRES what would the command line text of the above commands be if we were to run this in a terminal?  
-
-# to submit a job in cipres 
-cipresrun \
-    -t MUSCLE \   
-    -i /home/martina/Desktop/bioinformatics/bats_ace2.fasta \
-    -y cipres_appinfo.yml \
-    -o output.muscle=/home/martina/Desktop/bioinformatics/outfile.fasta \
-
-# to get the tree
-cipresrun \ 
-    -t RAxML-HPC2_TGB \ 
-    -p vparam.datatype_=dna  \ 
-    -p vparam.runtime_ =2 \  
-    -i /home/martina/Desktop/bioinformatics/bats_ace2_aligned.fasta \ 
-    -y cipres_appinfo.yml \
-    -o output.contree=/home/martina/Desktop/bioinformatics/tree.dnd
+update this!
 
 4. Sequences from which species is/are most closely related to that of the "Flying Fox"?  
 Synconycteris australis ace2

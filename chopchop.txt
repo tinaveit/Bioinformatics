@@ -1,0 +1,19 @@
+1) Species: Mus musculus
+
+2) Gene: EXT1
+
+3) 
+Target sequence: ATATCACGTCCATAACGGGGAGG
+Genomic location:NC_000081.7:53207889
+
+4)
+Right Primer
+Sequence: GCAGCCCTTACTCACTTCTCAT
+Coordinates: NC_000081.7:53207783-53207805
+
+Left Primer
+Sequence: TCTAAGGATCATCCCAggacag
+Coordinates: NC_000081.7:53208027-53208049
+
+5) Expected phenotype
+

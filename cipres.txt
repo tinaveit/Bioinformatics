@@ -1,7 +1,10 @@
 # Name: Martina Veit Acosta
 
-3. Using CIPRES what would the command line text of the above commands be if we were to run this in a terminal?  
-update this!
+3. Using CIPRES what would the command line text of the above commands be if we were to run this in a terminal? 
+
+muscle -in infile.fasta -seqtype protein -maxiters 16 -maxmb 30000000 -root1 pseudo -maxtrees 1 -root2 pseudo -objscore sp -noanchors -out bats_ace2_alignment.fasta
+
+iqtree2 -nt 12 -bnni -s infile.txt -st AA --sprrad 6 -B 1000 --prefix output
 
 4. Sequences from which species is/are most closely related to that of the "Flying Fox"?  
 Synconycteris australis ace2

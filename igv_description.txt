@@ -1,4 +1,7 @@
 In my screenshot blue stands for ATAC-Seq, orange stands for RNA-Seq, and green stands for annotation. 
-Highlighted in red is the region of interest. The figure is illustrating LOC119414798. The peaks in ATAC-Seq data suggest accessible chromatin regions, 
-which are indicative of potential regulatory elements. Based on observations from the image, chromatin accessibility is similar between both stages because
-they have peaks around the same region. I also observed RNA-Seq peaks exactly overlapping with the location of the gene, which could indicate that the gene is actively being transcribed in the samples being analyzed. Finally, the region of interest has a roughly 10,000 bp distance  as indicated by the scale bar. 
+Highlighted in red is the region of interest. The figure is illustrating LOC119414798. The peaks in ATAC-Seq 
+data suggest accessible chromatin regions, which are indicative of potential regulatory elements. Based on 
+observations from the image, chromatin accessibility is similar between both stages because they have peaks around
+the same region. I also observed RNA-Seq peaks exactly overlapping with the location of the gene, which could indicate
+that the gene is actively being transcribed in the samples being analyzed. Finally, the region of interest has a roughly
+10,000 bp distance  as indicated by the scale bar. 

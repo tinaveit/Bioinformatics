@@ -1,8 +1,5 @@
-The Nematolebias whitei killifish undergoes distinct larvae and diapause stages, with larvae exhibiting rapid growth and development, while diapause
-allows the fish to enter a period of dormancy to survive adverse environmental conditions. In my screenshot blue stands for ATAC-Seq, orange stands for RNA-Seq,
-and green stands for annotation. Highlighted in red is the region of interest. The figure is illustrating LOC119414798. The peaks in ATAC-Seq 
-data suggest accessible chromatin regions, which are indicative of potential regulatory elements. Based on 
-observations from the image, chromatin accessibility is similar between both stages because they have peaks around
-the same region. I also observed RNA-Seq peaks exactly overlapping with the location of the gene, which could indicate
-that the gene is actively being transcribed in the samples being analyzed. Finally, the region of interest has a roughly
-10,000 bp distance  as indicated by the scale bar. 
+The Nematolebias whitei killifish undergoes distinct larvae and diapause stages. The larvae stage happens right after hatching and they exhibit rapid growth and development. The diapause stage is very important for this type of killifish because they have dormant (diapausing) embryos that withstand seasonal habitat desiccation which results in death of the entire parental population. With that in mind, in my screenshot from IGV blue stands for ATAC-Seq, orange stands for 
+RNA-Seq, and green stands for annotation. Highlighted in red is the region of interest. The figure is illustrating LOC119414798. The peaks in ATAC-Seq 
+data suggest accessible chromatin regions, which are indicative of potential regulatory elements. Based on observations from the image, chromatin accessibility is similar between both stages because they have peaks around the same region. I also observed RNA-Seq peaks exactly overlapping with the location of the gene,
+which could indicate that the gene is actively being transcribed in the samples being analyzed. Finally, the region of interest has a roughly
+10,000 bp distance as indicated by the scale bar. 

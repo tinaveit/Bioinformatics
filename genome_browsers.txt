@@ -7,7 +7,8 @@ Using Ensembl Ensembl Release 111 answer the following questions:
 27
 
 3.) How many introns are in the longest splice variant(s) of BRCA2?
-4
+Updated answer: 27
+Previous answer: 3
 
 4.) What chromosome is this gene on?
 Chromosome 13: 32,315,508-32,400,268 forward strand.
@@ -19,7 +20,8 @@ BRCC2, FACD, FAD, FAD1, FANCD, FANCD1, XRCC11
 1
 
 7.) In the human hemoglobin transcript ENST00000330597.5 HBG1-201, what is the sequence of the second exon?
-ENSE00001598355
+Updated answer: ENSE00001598355
+Previous answer: PENSE00001598355
 
 8.) What is the length of the first intron of this hemoglobin transcript?
 122
@@ -43,12 +45,14 @@ rnf32 (ENSBSLG00000001314)
 1
 
 13.) How many copies of shh are in Atlantic salmon?
-2
+Updated answer: 1
+Previous answer: 2
 
 Using NCBI answer the following questions:
 
 14.) How many genome assemblies are available for Bos taurus on NCBI?
-17
+Updated answer: 26
+Previous answer: 17
 
 15.) How many of the above assemblies are assembled into chromosomes?
 11

@@ -7,8 +7,8 @@ Using Ensembl Ensembl Release 111 answer the following questions:
 27
 
 3.) How many introns are in the longest splice variant(s) of BRCA2?
-Updated answer: 27
-Previous answer: 3
+27
+
 
 4.) What chromosome is this gene on?
 Chromosome 13: 32,315,508-32,400,268 forward strand.
@@ -48,14 +48,12 @@ rnf32 (ENSBSLG00000001314)
 1
 
 13.) How many copies of shh are in Atlantic salmon?
-Updated answer: 4
-Previous answer: 2
+4
 
 Using NCBI answer the following questions:
 
 14.) How many genome assemblies are available for Bos taurus on NCBI?
-Updated answer: 26
-Previous answer: 17
+26
 
 15.) How many of the above assemblies are assembled into chromosomes?
 11

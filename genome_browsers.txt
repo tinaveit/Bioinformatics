@@ -20,7 +20,10 @@ BRCC2, FACD, FAD, FAD1, FANCD, FANCD1, XRCC11
 1
 
 7.) In the human hemoglobin transcript ENST00000330597.5 HBG1-201, what is the sequence of the second exon?
-Updated answer: ENSE00001598355
+Updated answer: GCTCCTGGTTGTCTACCCATGGACCCAGAGGTTCTTTGACAGCTTTGGCAACCTGTCCTC
+TGCCTCTGCCATCATGGGCAACCCCAAAGTCAAGGCACATGGCAAGAAGGTGCTGACTTC
+CTTGGGAGATGCCACAAAGCACCTGGATGATCTCAAGGGCACCTTTGCCCAGCTGAGTGA
+ACTGCACTGTGACAAGCTGCATGTGGATCCTGAGAACTTCAAG
 Previous answer: PENSE00001598355
 
 8.) What is the length of the first intron of this hemoglobin transcript?
@@ -45,7 +48,7 @@ rnf32 (ENSBSLG00000001314)
 1
 
 13.) How many copies of shh are in Atlantic salmon?
-Updated answer: 1
+Updated answer: 4
 Previous answer: 2
 
 Using NCBI answer the following questions:

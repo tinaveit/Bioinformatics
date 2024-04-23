@@ -16,4 +16,6 @@ Sequence: TCTAAGGATCATCCCAggacag
 Coordinates: NC_000081.7:53208027-53208049
 
 5) Expected phenotype after knockout:
-After doing some research, I found that the EXT1 gene encodes a protein involved in the biosynthesis of heparan sulfate. Overall, the phenotype resulting from EXT1 gene knockout would primarily manifest as skeletal abnormalities due to the development of multiple osteochondromas (benign bone tumors throughout the skeleton).
+After doing some research, I found that the EXT1 gene encodes a protein involved in the biosynthesis of heparan sulfate.
+Overall, the phenotype resulting from EXT1 gene knockout would primarily manifest as skeletal abnormalities due to the development
+of multiple osteochondromas (benign bone tumors throughout the skeleton).
